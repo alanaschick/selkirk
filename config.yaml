@@ -1,24 +1,31 @@
+# **********************************
+# * Parameters for selkirk pipeline *
+# **********************************
+
 # List of files
-list_files: "ref_files/list_files.txt"
+list_files: "/home/aschick/projects/ncho/list_files.txt"
+
+# Path to raw sequences
+path: "/home/aschick/projects/ncho/data/rawdata/"
 
 # Primers - Illumina V3-V4
-#fwd_primer: "TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG"
-#rev_primer: "GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC"
-#fwd_primer_rc: "CTGCWGCCNCCCGTAGGCTGTCTCTTATACACATCTGACGCTGCCGACGA"
-#rev_primer_rc: "GGATTAGATACCCBDGTAGTCCTGTCTCTTATACACATCTCCGAGCCCACGAGAC"
+fwd_primer: "TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG"
+rev_primer: "GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC"
+fwd_primer_rc: "CTGCWGCCNCCCGTAGGCTGTCTCTTATACACATCTGACGCTGCCGACGA"
+rev_primer_rc: "GGATTAGATACCCBDGTAGTCCTGTCTCTTATACACATCTCCGAGCCCACGAGAC"
 
 # Primers - V3 (Surette protocol)
-fwd_primer: "ATTACCGCGGCTGCTGG"
-rev_primer: "CCTACGGGAGGCAGCAG"
-fwd_primer_rc: "CCAGCAGCCGCGGTAAT"
-rev_primer_rc: "CTGCTGCCTCCCGTAGG"
+#fwd_primer: "ATTACCGCGGCTGCTGG"
+#rev_primer: "CCTACGGGAGGCAGCAG"
+#fwd_primer_rc: "CCAGCAGCCGCGGTAAT"
+#rev_primer_rc: "CTGCTGCCTCCCGTAGG"
 
 # Set filtering parameters for dada2
 trimleft: 8
-expected_errors_forward: 5
+expected_errors_forward: 2
 expected_errors_reverse: 5
-truncate_forward: 140
-truncate_reverse: 140
+truncate_forward: 265
+truncate_reverse: 245
 
 # number of threads
 num_threads: 28
