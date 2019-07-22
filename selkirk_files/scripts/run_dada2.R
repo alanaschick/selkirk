@@ -81,8 +81,8 @@ write.table(summary_tab, file.path("results", "reads_tracked.txt"))
 
 ####### Step 8: Assign Taxonomy
 
-taxa <- assignTaxonomy(seqtab.nochim, "ref_files/silva_nr_v132_train_set.fa.gz", multithread = TRUE)
-taxa <- addSpecies (taxa, "ref_files/silva_species_assignment_v132.fa.gz")
+taxa <- assignTaxonomy(seqtab.nochim, "/home/aschick/refs/dada2/silva_nr_v132_train_set.fa.gz", multithread = TRUE)
+taxa <- addSpecies (taxa, "/home/aschick/refs/dada2/silva_species_assignment_v132.fa.gz")
 
 
 
